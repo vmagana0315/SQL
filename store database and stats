@@ -1,0 +1,24 @@
+--creat a store database
+CREATE TABLE candy(id INTEGER PRIMARY KEY,name TEXT,rating INTEGER,color TEXT ,price INTEGER);
+
+INSERT INTO candy VALUES(1,"gum",4,"pink",5);
+INSERT INTO candy VALUES(2,"m&ms",5,"blue",3);
+INSERT INTO candy VALUES(3,"snickers",5,"brown",1);
+INSERT INTO candy VALUES(4,"sour patch",3,"red",3);
+INSERT INTO candy VALUES(5,"nerds",2,"red",1);
+INSERT INTO candy VALUES(6,"twizzlers",0,"red",1);
+INSERT INTO candy VALUES(7,"hershey",4,"brown",2);
+INSERT INTO candy VALUES(8,"twix",5,"brown",2);
+INSERT INTO candy VALUES(9,"milky way",1,"brown",2);
+INSERT INTO candy VALUES(10,"skittles",1,"red",1);
+INSERT INTO candy VALUES(11,"lollypop",2,"pink",1);
+INSERT INTO candy VALUES(12,"gummy bear",4,"pink",2);
+INSERT INTO candy VALUES(13,"ring pop",4,"red",1);
+INSERT INTO candy VALUES(14,"smarties",1,"white",1);
+INSERT INTO candy VALUES(15,"air head",2,"red",1);
+
+--display order by price
+SELECT * FROM candy ORDER BY price;
+
+--sum of candy
+SELECT SUM (price) FROM candy; 
