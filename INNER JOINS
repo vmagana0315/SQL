@@ -1,0 +1,16 @@
+/*JOINS project - movie stars */
+
+CREATE TABLE movie_stars
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT);
+
+INSERT INTO movie_stars (name) VALUES ("Johnny Depp");
+INSERT INTO movie_stars(name) VALUEs (" Brad Pit");
+INSERT INTO movie_stars(name) VALUEs ("Angelina Jolie");
+CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);
+INSERT INTO movies(name) VALUES ("Pirates of the Caribean");
+INSERT INTO movies(name)VALUES ("World War Z");
+INSERT INTO movies(name)VALUES ("Mrs.Smith");
+
+
+SELECT * FROM movie_stars,movies WHERE movie_stars.id=movies.id;
